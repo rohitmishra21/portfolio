@@ -1,0 +1,7 @@
+img {
+    opacity: 0;
+  }
+  .app canvas {
+    position: fixed;
+    z-index: 0;
+  }
