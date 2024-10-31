@@ -4,28 +4,30 @@ import Navbar from "./Navbar";
 const Computer = () => {
   return (
     <>
-    <div className="w-full text-gray-300/50">
-    <main className="relative">
-      <div className="w-full absolute  ">
-        <Navbar />
-        <div className=" py-11  px-40 h-64 w-full">
-            <h1 className=" py-8 w-fit text-5xl ">Hi, I’m Rohit Mishra</h1>
+       <Navbar/>
+      <div className="w-full flex items-center h-[100vh]  ">
+     
+        <div className="w-1/2  py-11     h-full">
+          <h1 className=" py-8 w-fit text-5xl font-semibold">Hi, I’m <span className=" italic text-[#953269]  "> Rohit Mishra</span> </h1>
           <h1 className="w-96 text-3xl">
-           Frontend Web Developer |  Passionate about
-            creating responsive and visually stunning websites." "Building
-            digital experiences with a focus on simplicity and functionality."
+            Frontend Web Developer | Passionate about creating responsive and
+            visually stunning websites." "Building digital experiences with a
+            focus on simplicity and functionality."
           </h1>
-   
         </div>
+        <div className="w-1/2 h-full mb-40">
+        <Spline
+       
+        scene="https://prod.spline.design/aucq01-pWVoKKa-0/scene.splinecode" 
+        style={{ transform: 'scale(0.8)' }}
+      />
+
+        </div>
+       <div className="bg-black w-28 h-8 absolute bottom-[87px] right-[190px] rounded-full">
+
+       </div>
       </div>
-      <Spline className="z-40  " scene="https://prod.spline.design/b4UGw7-Nd5uf1LA1/scene.splinecode" />
-         
-      <div className="absolute w-40 h-12 bg-black bottom-4 right-0 "></div>
-    </main>
-    </div>
-   
     </>
-   
   );
 };
 

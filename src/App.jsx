@@ -1,21 +1,18 @@
-
 import React from "react";
 import Hero from "./components/Hero";
 import Computer from "./components/Computer";
+import Skills from "./components/Skills";
 
-import Description from "./components/Description";
-import Project from "./components/Project";
 
 
 const App = () => {
   return (
-    <div>
+    <div className="px-24">
       <Computer />
-      <Hero/>
-      <Description/>
-      <Project/>
+      <Hero />
+       <Skills/>
 
-     </div>
+    </div>
   );
 };
 

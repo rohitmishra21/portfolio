@@ -1,7 +1,26 @@
-img {
-    opacity: 0;
-  }
-  .app canvas {
-    position: fixed;
-    z-index: 0;
-  }
+.contaner{
+  height: 350px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+
+}
+
+.slider-contaner{
+  display: flex;
+  width: calc(170px);
+  animation: scroll 20s linear infinite
+  
+}
+
+@keyframes scroll {
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(calc(-250px * 8));
+    }
+}
+

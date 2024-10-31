@@ -1,47 +1,9 @@
-import React, { useEffect, useRef } from "react";
-
+import "./index.css";
 import * as THREE from "three";
 import vertex from "../shader/vertix.glsl";
 import fragment from "../shader/fragment.glsl";
 import gsap from "gsap";
 
-const Project = () => {
-  const canvasRef = useRef(null);
-
-  useEffect(() => {
-  
-    const site = new Site({ dom: canvasRef.current });
-
-    
-    return () => {
-      window.removeEventListener("resize", site.resize);
-    };
-  }, []);
-
-  return (
-    <div className="app h-screen flex w-full">
-      <div className="canvas w-1/2 h-screen relative" ref={canvasRef}>
-      <div className="images absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[32vw] w-[25vw]">
-               <img className="w-full h-full object-cover absolute " src="https://images.unsplash.com/photo-1727384182379-e4cd8e8d5ffd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-               <img className="w-full h-full object-cover absolute " src="https://images.unsplash.com/photo-1727341392733-c2646fe7987d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzOHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-               <img className="w-full h-full object-cover absolute " src="https://images.unsplash.com/photo-1727440144543-ded882c768c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNnx8fGVufDB8fHx8fA%3D%3D" alt="" />
-               <img className="w-full h-full object-cover absolute " src="https://images.unsplash.com/photo-1726999992858-362c15be0d95?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0M3x8fGVufDB8fHx8fA%3D%3D" alt="" />
-               <img className="w-full h-full object-cover absolute " src="https://images.unsplash.com/photo-1727246115849-eea4f2b85a65?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0OXx8fGVufDB8fHx8fA%3D%3D" alt="" />
-            </div>
-      </div>
-      <div className="links w-1/2 h-screen flex flex-col gap-10 items-center justify-center text-4xl uppercase font-extrabold bg-gray-900 text-white">
-        <a href="#">some words</a>
-        <a href="#">some words</a>
-        <a href="#">some words</a>
-        <a href="#">some words</a>
-        <a href="#">some words</a>
-        <a href="#">some words</a>
-      </div>
-    </div>
-  );
-};
-
-// Three.js className (kept mostly the same)
 class Site {
   constructor({ dom }) {
     this.time = 0;
@@ -148,7 +110,14 @@ class Site {
   hoverLinks() {
     const links = document.querySelectorAll(".links a");
     links.forEach((link, i) => {
+
+
+    
       link.addEventListener("mouseover", (e) => {
+   
+        console.log(link);
+        
+        
         this.material.uniforms.uTimeline.value = 0.0;
         gsap.killTweensOf(this.material.uniforms.uTimeline);
 
@@ -174,4 +143,6 @@ class Site {
   }
 }
 
-export default Project;
+new Site({
+  dom: document.querySelector(".canvas"),
+});
