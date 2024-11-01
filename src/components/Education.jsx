@@ -1,9 +1,8 @@
 import React from "react";
 import { Tilt } from "react-tilt";
-
 const Education = () => {
   return (
-    <div className="text-white">
+    <div className="text-white ">
       <h1 className="text-7xl uppercase py-7 text-[#953269]   font-bold">
         Education
       </h1>
