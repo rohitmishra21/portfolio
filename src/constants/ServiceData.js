@@ -2,7 +2,9 @@ import { FaPenClip } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaCode } from "react-icons/fa6";
 import { FaCameraRetro } from "react-icons/fa";
-
+import { FaVideo } from "react-icons/fa";
+import { IoPhonePortraitOutline } from "react-icons/io5";
+import { IoNewspaperOutline } from "react-icons/io5";
 
 const ServiceData = [
     {
@@ -18,21 +20,22 @@ const ServiceData = [
         name: "Web design"
     },
     {
-        icon: FaPenClip, // store the icon component reference, not JSX
-        name: "Content Writing"
-    },
-    {
         icon: FaCameraRetro,
         name: "Photography"
     },
     {
-        icon: FaPenClip,
-        name: "Content Writing"
+        icon: FaVideo, // store the icon component reference, not JSX
+        name: "Video Editing"
     },
     {
-        icon: FaPenClip,
-        name: "Content Writing"
+        icon: IoPhonePortraitOutline,
+        name: "Ebook Writing"
     },
+    {
+        icon: IoNewspaperOutline,
+        name: "Blog Posting"
+    },
+  
 ];
 
 export default ServiceData;

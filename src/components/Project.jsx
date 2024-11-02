@@ -10,18 +10,20 @@ function Project() {
         </h1>
         {projects.map((project) => (
           <>
-            <div className="  h-[70vh] flex justify-center items-center  w-full">
-              <div className="  h-[100%] ">
+            <div
+              className={`h-[70vh]  flex ${project.row} pr-20 justify-center items-center w-full`}
+            >
+              <div className=" w-1/2  h-[100%] ">
                 <img src={project.img} className="h-full object-cover" alt="" />
               </div>
 
-              <div className="flex-col flex justify-center items-start gap-10 w-1/2  h-[70%] ">
+              <div className="flex-col flex justify-cente px-10 items-start gap-10 w-1/2  h-[70%] ">
                 <h1 className="text-4xl text-[#fd5fb6]  font-medium uppercase">
                   {project.name}
                 </h1>
-                <p>{project.para}</p>
+                <p className="">{project.para}</p>
                 <button className="px-8 py-3 hover:-translate-y-3 transition-all duration-200 shadow-lg s bg-[#953269] rounded-lg font-bold">
-                  CASE STUDT
+                  CASE STUDTY
                 </button>
               </div>
             </div>
@@ -31,7 +33,6 @@ function Project() {
           <button className="px-8 py-3 hover:-translate-y-3 transition-all duration-200 shadow-lg s bg-[#953269] rounded-lg font-bold">
             Seen all
           </button>
-         
         </div>
       </div>
     </>

@@ -1,7 +1,4 @@
 import React from "react";
-// import { experiences } from "../constants";
-// import { motion } from "framer-motion";
-// import Tilt from "react-parallax-tilt";
 
 import Spline from "@splinetool/react-spline";
 import Border from "./Border";

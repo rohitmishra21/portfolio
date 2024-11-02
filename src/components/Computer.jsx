@@ -15,7 +15,7 @@ const Computer = () => {
             focus on simplicity and functionality."
           </h1>
         </div>
-        <div className="w-1/2 h-full mb-40">
+        <div className="w-1/2 h-full mb-8">
         <Spline
        
         scene="https://prod.spline.design/aucq01-pWVoKKa-0/scene.splinecode" 
@@ -23,7 +23,7 @@ const Computer = () => {
       />
 
         </div>
-       <div className="bg-black w-28 h-8 absolute bottom-[87px] right-[190px] rounded-full">
+       <div className="bg-black w-28 h-8 absolute bottom-[25px] right-[175px] rounded-full">
 
        </div>
       </div>

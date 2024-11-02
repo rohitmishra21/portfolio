@@ -7,12 +7,13 @@ import Services from "../constants/ServiceData";
 const Service = () => {
   return (
     <>
-      <div className="w-full py-20 h-screen ">
-        <Border />
-        <h1 className="text-7xl uppercase py-12 text-center text-[#953269]   font-bold">
+     <Border />
+      <div className="w-full min-h-screen ">
+       
+        <h1 className="text-7xl uppercase py-8 text-center text-[#953269]   font-bold">
           Service
         </h1>
-        <p className="text-3xl text-center font-serif text-white/80">
+        <p className="text-3xl text-center font-sans text-white/80">
           These are some of the services I offer. Reach out to me if I can help
           you with any!
         </p>
