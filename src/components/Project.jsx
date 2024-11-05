@@ -11,24 +11,24 @@ function Project() {
         {projects.map((project) => (
           <>
             <div
-              className={`h-[70vh]  sm:flex  xl:w-full    ${project.row} xl:pr-20 xl:items-center  w-full`}
+              className={`h-[90vh] sm:h-[40vh] xl:h-full sm:mt-10 sm:flex   xl:w-full    ${project.row} xl:pr-20 xl:items-center w-full`}
             >
-              <div className=" xl:w-1/2 w-full xl:h-[100%] ">
+              <div className=" xl:w-1/2  sm:w-1/2 sm:h-full w-full xl:h-[100%] ">
                 <img
                   src={project.img}
-                  className="xl:h-full w-full  object-cover"
+                  className="  sm:w-full xl:w-full xl:h-full  object-cover"
                   alt=""
                 />
               </div>
 
-              <div className=" flex-col  flex justify-cente xl:px-10 items-start  gap-10 xl:w-1/2  xl:h-[70%] ">
-                <h1 className="xl:text-4xl sm:text-4xl text-3xl text-[#fd5fb6]  font-medium uppercase">
+              <div className=" flex-col -500 gap-5  flex px-4 xl:px-28  items-start  sm:w-1/2 xl:w-1/2  xl:h-full ">
+                <h1 className="xl:text-4xl mt-10 sm:text-2xl text-3xl text-[#fd5fb6]  font-medium uppercase">
                   {project.name}
                 </h1>
-                <p className="sm:text-lg">{project.para}</p>
+                <p className="sm:text-xs xl:text-lg ">{project.para}</p>
                 <Link
                   to={{ pathname: `pro/${project.id}` }}
-                  className="xl:px-8 xl:py-3 hidden xl:block px-4 py-2 hover:-translate-y-3 transition-all duration-200 shadow-lg  bg-[#953269] rounded-lg font-bold"
+                  className="xl:px-8  xl:py-3  xl:block px-4 py-2 hover:-translate-y-3 transition-all duration-200 shadow-lg  bg-[#953269] rounded-lg font-bold"
                 >
                   CASE STUDTY
                 </Link>

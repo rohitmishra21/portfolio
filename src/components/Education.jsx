@@ -5,7 +5,7 @@ const Education = () => {
       <h1 className="xl:text-7xl text-4xl pt-16 uppercase xl:py-7 text-[#953269]   font-bold">
         Education
       </h1>
-      <div className="flex flex-col justify-center items-center xl:flex-row px-2 xl:gap-12">
+      <div className="flex flex-col sm:flex-row sm:gap-1 justify-center items-center xl:flex-row px-2 xl:gap-12">
         <Tilt className="w-1/2 py-16">
           <div className="w-full  green-pink-gradiant rounded-[20px] border-2  shadow-sm shadow-white border-white/50 ">
             <h1 className="px-6 py-3 font-extrabold text-xl text-[#953269] ">

@@ -47,7 +47,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full hidden h-20 xl:flex justify-center xl:justify-end py-10 ">
+      {/* <div className="w-full hidden h-20 xl:flex justify-center xl:justify-end py-10 ">
         <div>
           <ul className="flex opacity-80 uppercase gap-10  ">
             <Link className="nav">about</Link>
@@ -68,10 +68,10 @@ const Navbar = () => {
             </Link>
           </ul>
         </div>
-      </div>
-      <div className=" xl:hidden flex  h-20 items-center justify-end py-4">
+      </div> */}
+      <div className="  flex  h-20 items-center justify-end py-4">
         <div
-          className="box items-center capitalize text-xs  w-full gap-3  h-full"
+          className="box items-center capitalize text-xs xl:text-xl xl:gap-12  w-full gap-3  h-full"
           style={{
             display: visible ? "none" : "flex",
           }}
@@ -93,7 +93,7 @@ const Navbar = () => {
             Contact
           </Link>
         </div>
-        <FaPlus className="icon" size={25} onClick={show} />
+        <FaPlus className="icon cursor-pointer" size={25} onClick={show} />
       </div>
     </>
   );

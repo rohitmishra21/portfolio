@@ -5,6 +5,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
@@ -31,8 +32,16 @@ const router = createBrowserRouter(
   )
 );
 
+function Layout() {
+  return (
+    <ReactLenis root>
+      <RouterProvider router={router} />
+    </ReactLenis>
+  );
+}
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <Layout />
   </StrictMode>
 );
