@@ -10,7 +10,7 @@ const Service = () => {
      <Border />
       <div className="w-full min-h-screen ">
        
-        <h1 className="text-7xl uppercase py-8 text-center text-[#953269]   font-bold">
+        <h1 className="xl:text-7xl text-5xl uppercase py-8 text-center text-[#953269]   font-bold">
           Service
         </h1>
         <p className="text-3xl text-center font-sans text-white/80">
@@ -18,7 +18,7 @@ const Service = () => {
           you with any!
         </p>
 
-     <div className="flex gap-12 justify-center py-32 flex-wrap">
+     <div className="flex gap-12 justify-center xl:py-32 py-16 flex-wrap">
      {Services.map((ser) => (
           <>
             <div className="">

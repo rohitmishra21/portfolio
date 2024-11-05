@@ -7,7 +7,7 @@ const Card = () => {
 
   return (
     <>
-      <div className="w-full   py-2 gap-7 flex overflow-x-hidden flex-nowrap whitespace-nowrap">
+      <div className="w-full   xl:py-2 gap-7 flex overflow-x-hidden flex-nowrap whitespace-nowrap">
         {cards.map((card, index) => (
           <>
           

@@ -24,3 +24,16 @@
     }
 }
 
+.nav{
+  z-index: 30;
+  cursor: pointer;
+  font-weight: 600;
+  
+  
+}
+
+.nav:hover{
+  color: #953269;
+  scale: 1.2;
+}
+

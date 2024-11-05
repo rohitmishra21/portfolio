@@ -9,14 +9,14 @@ import Blog from "./components/Blog";
 
 const App = () => {
   return (
-    <div className="px-24">
+    <div className="xl:px-24 px-6 ">
       <Computer />
       <Hero />
       <Skills />
-      <Project/>
-      <Service/>
-      <Blog/>
-      <Contacts/>
+      <Project />
+      <Service />
+      <Blog />
+      <Contacts />
     </div>
   );
 };

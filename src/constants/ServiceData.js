@@ -9,11 +9,11 @@ import { IoNewspaperOutline } from "react-icons/io5";
 const ServiceData = [
     {
         icon: FaPenClip, // store the icon component reference, not JSX
-        name: "Content Writing"
+        name: "Content Writing",
     },
     {
         icon: MdOutlineMailOutline,
-        name: "Email Marketing"
+        name: "Email Marketing",
     },
     {
         icon: FaCode,
