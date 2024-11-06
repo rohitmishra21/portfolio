@@ -1,12 +1,8 @@
-// vite.config.js
-import { defineConfig } from "file:///C:/Users/rahul/Desktop/3d%20project/3d/node_modules/vite/dist/node/index.js";
-import react from "file:///C:/Users/rahul/Desktop/3d%20project/3d/node_modules/@vitejs/plugin-react/dist/index.mjs";
-import glsl from "file:///C:/Users/rahul/Desktop/3d%20project/3d/node_modules/vite-plugin-glsl/src/index.js";
-import svgr from "file:///C:/Users/rahul/Desktop/3d%20project/node_modules/vite-plugin-svgr/dist/index.js";
-var vite_config_default = defineConfig({
-  plugins: [react(), glsl(), svgr()]
+import { defineConfig } from "vite"; // सही तरीके से Vite को इंपोर्ट करें
+import react from "@vitejs/plugin-react"; // सही तरीके से React प्लगइन को इंपोर्ट करें
+import glsl from "vite-plugin-glsl"; // GLSL प्लगइन को सही तरीके से इंपोर्ट करें
+import svgr from "vite-plugin-svgr"; // केवल एक बार SVGR प्लगइन इंपोर्ट करें
+
+export default defineConfig({
+  plugins: [react(), glsl(), svgr()], // सभी प्लगइन्स का सही उपयोग
 });
-export {
-  vite_config_default as default
-};
-//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcuanMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCJDOlxcXFxVc2Vyc1xcXFxyYWh1bFxcXFxEZXNrdG9wXFxcXDNkIHByb2plY3RcXFxcM2RcIjtjb25zdCBfX3ZpdGVfaW5qZWN0ZWRfb3JpZ2luYWxfZmlsZW5hbWUgPSBcIkM6XFxcXFVzZXJzXFxcXHJhaHVsXFxcXERlc2t0b3BcXFxcM2QgcHJvamVjdFxcXFwzZFxcXFx2aXRlLmNvbmZpZy5qc1wiO2NvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9pbXBvcnRfbWV0YV91cmwgPSBcImZpbGU6Ly8vQzovVXNlcnMvcmFodWwvRGVza3RvcC8zZCUyMHByb2plY3QvM2Qvdml0ZS5jb25maWcuanNcIjtpbXBvcnQgeyBkZWZpbmVDb25maWcgfSBmcm9tICd2aXRlJ1xuaW1wb3J0IHJlYWN0IGZyb20gJ0B2aXRlanMvcGx1Z2luLXJlYWN0J1xuaW1wb3J0IGdsc2wgZnJvbSBcInZpdGUtcGx1Z2luLWdsc2xcIlxuaW1wb3J0IHN2Z3IgZnJvbSAndml0ZS1wbHVnaW4tc3ZncidcblxuLy8gaHR0cHM6Ly92aXRlanMuZGV2L2NvbmZpZy9cbmV4cG9ydCBkZWZhdWx0IGRlZmluZUNvbmZpZyh7XG4gIHBsdWdpbnM6IFtyZWFjdCgpLGdsc2woKSwgc3ZncigpXVxuICBcbn0pXG5cbiJdLAogICJtYXBwaW5ncyI6ICI7QUFBNFMsU0FBUyxvQkFBb0I7QUFDelUsT0FBTyxXQUFXO0FBQ2xCLE9BQU8sVUFBVTtBQUNqQixPQUFPLFVBQVU7QUFHakIsSUFBTyxzQkFBUSxhQUFhO0FBQUEsRUFDMUIsU0FBUyxDQUFDLE1BQU0sR0FBRSxLQUFLLEdBQUcsS0FBSyxDQUFDO0FBRWxDLENBQUM7IiwKICAibmFtZXMiOiBbXQp9Cg==
