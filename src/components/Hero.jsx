@@ -11,7 +11,7 @@ const Hero = () => {
     <>
       <Border />
 
-      <div className="w-full relative sm:py-12 sm:h-[90%] h-[100vh] xl:py-28 flex">
+      <div className="w-full relative sm:py-12 pb-9 h-fit sm:h-[90%] xl:py-28 flex">
         <div className=" xl:w-1/2 xl:pr-20 sm:w-[80%] ">
           <h1 className="text-3xl uppercase ">Introduction</h1>
           <h1 className="xl:text-7xl text-4xl uppercase py-7 text-[#953269]   font-bold">

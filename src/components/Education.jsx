@@ -6,7 +6,7 @@ const Education = () => {
         Education
       </h1>
       <div className="flex flex-col sm:flex-row sm:gap-1 justify-center items-center xl:flex-row px-2 xl:gap-12">
-        <Tilt className="w-1/2 py-16">
+        <Tilt className="xl:w-1/2 w-full py-16">
           <div className="w-full  green-pink-gradiant rounded-[20px] border-2  shadow-sm shadow-white border-white/50 ">
             <h1 className="px-6 py-3 font-extrabold text-xl text-[#953269] ">
               2019-2020
@@ -19,7 +19,7 @@ const Education = () => {
             </h1>
           </div>
         </Tilt>
-        <Tilt className="w-1/2 xl:h-40  py-16">
+        <Tilt className="xl:w-1/2 w-full pb-11  xl:py-16">
           <div className="w-full  green-pink-gradiant xl:h-40   rounded-[20px] border-2  shadow-sm shadow-white border-white/50 ">
             <h1 className="px-6 py-3 font-extrabold  text-xl text-[#953269] ">
               2020-2022

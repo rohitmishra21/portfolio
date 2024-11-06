@@ -12,9 +12,9 @@ const MyprojectContent = () => {
   return (
     <>
       <div className="px-20 text-xl font-mono"></div>
-      <div>
+      <div className="">
         <div
-          className="w-full h-[60vh] flex-col gap-10 flex justify-center items-center"
+          className="w-full  min-h-[60vh] flex-col gap-10 flex justify-center items-center"
           key={id}
         >
           <h1 className="text-6xl font-bold">{name}</h1>
@@ -28,13 +28,15 @@ const MyprojectContent = () => {
           </Link>
         </div>
         <div className="w-full flex flex-col items-center">
-          <div className="w-[80%]">
+          <div className="xl:w-[80%]">
             <img className="w-full object-cover" src={img} alt="" />
           </div>
 
-          <div className="w-1/2 min-h-[65vh] text-2xl ">{overView}</div>
+          <div className="xl:w-1/2 w-full px-2  min-h-[65vh] text-2xl ">
+            {overView}
+          </div>
 
-          <div className="w-1/2">
+          <div className="xl:w-1/2 px-2 h-[90vh] xl:h-fit">
             <h1 className="text-3xl font-bold">Tools Used</h1>
             <div className="flex gap-4 justify-start items-center flex-wrap py-9">
               {tools.map((tool) => (
@@ -52,7 +54,7 @@ const MyprojectContent = () => {
               </Link>
               <Link
                 to="/"
-                className="border-2 ml-8 shadow-lg font-extrabold shadow-[#ff8fcd4e] border-[#95326838] rounded-full px-8 py-4 text-xl"
+                className="border-2 xl:ml-8 shadow-lg font-extrabold shadow-[#ff8fcd4e] border-[#95326838] rounded-full px-8 py-4 text-xl"
               >
                 Go Back
               </Link>

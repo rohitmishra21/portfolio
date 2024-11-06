@@ -61,15 +61,15 @@ export default function ProjectPage() {
                 </>
               ))}
             </div>
-            <div className="pb-32  ">
+            <div className="pb-32 h-[60vh] ">
               <h1 className="font-bold text-3xl py-16">See Live</h1>
               <div className="">
-                <Link className="border-2 shadow-lg font-extrabold shadow-[#ff8fcd4e] border-[#95326838] rounded-full px-8 py-4 text-xl">
+                <Link className="border-2 shadow-lg font-extrabold shadow-[#ff8fcd4e] border-[#95326838] rounded-full px-8 py-4 xl:text-xl">
                   Project Link
                 </Link>
                 <Link
                   to="/"
-                  className="border-2 xl:ml-8  shadow-lg font-extrabold shadow-[#ff8fcd4e] border-[#95326838] rounded-full px-8 py-4 text-xl"
+                  className="border-2 xl:ml-8  shadow-lg font-extrabold shadow-[#ff8fcd4e] border-[#95326838] rounded-full px-8 py-4 xl:text-xl"
                 >
                   Go Back
                 </Link>
