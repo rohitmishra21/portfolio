@@ -11,7 +11,7 @@ function Project() {
         {projects.map((project) => (
           <>
             <div
-              className={`h-[65vh]  sm:h-[40vh] xl:h-full sm:mt-10 sm:flex   xl:w-full    ${project.row} xl:pr-20 xl:items-center w-full`}
+              className={`h-[65vh]  sm:h-[40vh] xl:h-full sm:mt-10 sm:flex   xl:w-full ${project.row} xl:pr-20 xl:items-center w-full`}
             >
               <div className=" xl:w-1/2  sm:w-1/2 sm:h-full w-full xl:h-[100%] ">
                 <img
@@ -25,7 +25,7 @@ function Project() {
                 <h1 className="xl:text-4xl mt-10 sm:text-2xl text-3xl text-[#fd5fb6]  font-medium uppercase">
                   {project.name}
                 </h1>
-                <p className="sm:text-xs xl:text-lg ">{project.para}</p>
+                <p className="sm:text-xs xl:text-lg ">{project.para.slice(0, 300) + "...."}</p>
                 <Link
                   to={{ pathname: `pro/${project.id}` }}
                   className="xl:px-8  xl:py-3  xl:block px-4 py-2 hover:-translate-y-3 transition-all duration-200 shadow-lg  bg-[#953269] rounded-lg font-bold"

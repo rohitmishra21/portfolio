@@ -1,14 +1,10 @@
 import information from "../constants/ProjectInfo";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
 
 const MyprojectContent = () => {
   const params = useParams();
   const { name, id, img, overView, tools } = information[params.id - 1];
-
-  console.log(img);
-
   return (
     <>
       <div className="px-20 text-xl font-mono"></div>
@@ -36,7 +32,7 @@ const MyprojectContent = () => {
             {overView}
           </div>
 
-          <div className="xl:w-1/2 px-2 h-[90vh] xl:h-fit">
+          <div className="xl:w-1/2 px-2 h-[90vh] xl:h-fitclea">
             <h1 className="text-3xl font-bold">Tools Used</h1>
             <div className="flex gap-4 justify-start items-center flex-wrap py-9">
               {tools.map((tool) => (

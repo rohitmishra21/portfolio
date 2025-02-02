@@ -62,20 +62,35 @@ const Contacts = () => {
           </div>
           <div className=" w-full py-10 xl:h-48">
             <div className="flex gap-10 items-end justify-center h-full">
-              <div className="border-2 shadow-lg hover:scale-90 transition-all duration-200  shadow-[#ff8fcd4e] border-[#95326838]  rounded-full p-2">
+              <a className="border-2 cursor-pointer shadow-lg hover:scale-90 transition-all duration-200  shadow-[#ff8fcd4e] border-[#95326838]  rounded-full p-2">
                 <FaXTwitter xl:size={35} size={22}  className="" />
-              </div>
+              </a>
 
-              <div className="border-2 shadow-lg  hover:scale-90 shadow-[#ff8fcd4e] border-[#95326838]  rounded-full p-2">
+             <a 
+                href="https://github.com/rohitmishra21" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="border-2 shadow-lg cursor-pointer  hover:scale-90 shadow-[#ff8fcd4e] border-[#95326838]  rounded-full p-2">
                 <FaGithub xl:size={35} size={22}  className="" />
-              </div>
+              </a>
 
-              <div className="border-2 shadow-lg  hover:scale-90 shadow-[#ff8fcd4e] border-[#95326838]  rounded-full p-2">
-                <FaLinkedin xl:size={35} size={22} className="" />
-              </div>
-              <div className="border-2 shadow-lg  hover:scale-90  shadow-[#ff8fcd4e] border-[#95326838]  rounded-full p-2">
-                <FaInstagram xl:size={35} size={22}  className="" />
-              </div>
+              <a
+               href="https://www.linkedin.com/in/rohit-mishra-657759298/" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="border-2 shadow-lg  hover:scale-90  shadow-[#ff8fcd4e] border-[#95326838]  rounded-full p-2">
+                <FaLinkedin xl:size={35} size={22}  className="" />
+              </a>
+
+              <a
+                href="https://www.instagram.com/rohitmishra11_27" 
+        target="_blank" 
+        rel="noopener noreferrer"
+              
+               className="border-2 shadow-lg cursor-pointer  hover:scale-90 shadow-[#ff8fcd4e] border-[#95326838]  rounded-full p-2">
+                <FaInstagram xl:size={35} size={22} className="" />
+              </a>
+              
             </div>
           </div>
         </div>

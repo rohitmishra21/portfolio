@@ -43,32 +43,11 @@ const Navbar = () => {
     });
   }
 
-  console.log(gsap);
+
 
   return (
     <>
-      {/* <div className="w-full hidden h-20 xl:flex justify-center xl:justify-end py-10 ">
-        <div>
-          <ul className="flex opacity-80 uppercase gap-10  ">
-            <Link className="nav">about</Link>
-            <Link to="skills" className="nav">
-              Skills
-            </Link>
-            <Link to="allProject" className="nav">
-              Project
-            </Link>
-            <Link to="service" className="nav">
-              service
-            </Link>
-            <Link to="blog" className="nav">
-              Blog
-            </Link>
-            <Link to="contact" className="nav">
-              Contact
-            </Link>
-          </ul>
-        </div>
-      </div> */}
+
       <div className="  flex  h-20 items-center justify-end py-4">
         <div
           className="box items-center capitalize text-xs xl:text-xl xl:gap-12  w-full gap-3  h-full"

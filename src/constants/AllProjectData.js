@@ -1,6 +1,7 @@
 const AllData = [
   {
     img: "../Project/alpha.png",
+    liveLink: "https://alpha-beauty.vercel.app",
     id: "1",
   },
   {

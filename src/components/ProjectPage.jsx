@@ -1,16 +1,18 @@
 import { Link } from "react-router-dom";
 import Details from "../constants/ProjectDetails";
 import { useParams } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop ";
 
 export default function ProjectPage() {
   const params = useParams();
 
-  const { id, img, name, KeyFeatures, tools, TechStack } = Details[
+  const { id, img, name, KeyFeatures, tools, TechStack, projectLink } = Details[
     params.id - 1
   ];
 
   return (
     <>
+      <ScrollToTop />
       <div className=" text-xl font-mono"></div>
       <div className=" xl:px-0 px-10">
         <div
@@ -23,9 +25,9 @@ export default function ProjectPage() {
             includes the Project Overview, Tools Used, and Live Links to the
             official product.
           </p>
-          <Link className="border-2 shadow-lg font-semibold shadow-[#ff8fcd4e] border-[#95326838] rounded-full px-8 py-4 text-xl">
+          <a href={projectLink} className="border-2 shadow-lg font-semibold shadow-[#ff8fcd4e] border-[#95326838] rounded-full px-8 py-4 text-xl">
             Live Link
-          </Link>
+          </a>
         </div>
         <div className="w-full flex flex-col  items-center">
           <div className="xl:w-[80%] py-10">
@@ -64,9 +66,9 @@ export default function ProjectPage() {
             <div className="pb-32 h-[60vh] ">
               <h1 className="font-bold text-3xl py-16">See Live</h1>
               <div className="">
-                <Link className="border-2 shadow-lg font-extrabold shadow-[#ff8fcd4e] border-[#95326838] rounded-full px-8 py-4 xl:text-xl">
+                <a href={projectLink} className="border-2 shadow-lg font-extrabold shadow-[#ff8fcd4e] border-[#95326838] rounded-full px-8 py-4 xl:text-xl">
                   Project Link
-                </Link>
+                </a>
                 <Link
                   to="/"
                   className="border-2 xl:ml-8  shadow-lg font-extrabold shadow-[#ff8fcd4e] border-[#95326838] rounded-full px-8 py-4 xl:text-xl"

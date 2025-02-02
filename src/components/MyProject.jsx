@@ -1,9 +1,11 @@
 import AllData from "../constants/AllProjectData";
 import { Link } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop ";
 
 const MyProject = () => {
   return (
     <div className="py-20">
+      <ScrollToTop />
       <h1 className="text-5xl pb-16 font-mono font-semibold text-center">
         My All Project
       </h1>
@@ -16,12 +18,12 @@ const MyProject = () => {
                 className="w-full h-full object-cover"
                 alt=""
               />
-              <Link
-                to={`/allProject/my/${data.id}`}
+              <a
+                href={data?.liveLink}
                 className="border-2 capitalize font-medium shadow-lg shadow-[#ff8fcd4e] border-[#95326838] rounded-full px-8 py-4 text-xl"
               >
-                learn more
-              </Link>
+                Live Link
+              </a>
             </div>
           </>
         ))}

@@ -7,9 +7,9 @@ const Blog = () => {
         Blog
       </h1>
       <div className="flex gap-10 xl:gap-6 flex-wrap justify-center py-6">
-        {bloges.map((blog) => (
+        {bloges.map((blog, i) => (
           <>
-            <div className=" green-pink-gradient border-2 shadow-lg w-96 shadow-[#ff8fcd4e] border-[#95326838]">
+            <div key={i} className=" green-pink-gradient border-2 shadow-lg w-96 shadow-[#ff8fcd4e] border-[#95326838]">
               <div className=" overflow-hidden gap-3   h-[450px] ">
                 <div className="h-1/2 w-full flex justify-center items-center">
                   <img
@@ -31,10 +31,10 @@ const Blog = () => {
         ))}
       </div>
       <div className="flex justify-end py-10">
-          <button className="px-8 py-3 hover:-translate-y-3 transition-all duration-200 shadow-lg s bg-[#953269] rounded-lg font-bold">
-            Seen all
-          </button>
-        </div>
+        <button className="px-8 py-3 hover:-translate-y-3 transition-all duration-200 shadow-lg s bg-[#953269] rounded-lg font-bold">
+          Seen all
+        </button>
+      </div>
     </div>
   );
 };
