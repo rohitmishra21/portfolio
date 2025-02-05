@@ -20,22 +20,22 @@ const Service = () => {
 
         <div className="flex gap-12 justify-center xl:py-32 py-16 flex-wrap">
           {Services.map((ser, i) => (
-            <>
-              <div key={i} className="">
-                <div className=" ">
-                  <Tilt className="w-52   ">
-                    <div className="w-full">
-                      <div className=" green-pink-gradient rounded-[16px] border-2 shadow-lg  shadow-[#ff8fcd4e] border-[#95326838]">
-                        <div className="bg-[#95326838] flex flex-col justify-center items-center gap-3   min-h-[220px] rounded-[20px]">
-                          <ser.icon size={50} />
-                          <p className="text-lg px-4 text-center"> {ser.name}</p>
-                        </div>
+
+            <div key={i} className="">
+              <div className=" ">
+                <Tilt className="w-52   ">
+                  <div className="w-full">
+                    <div className=" green-pink-gradient rounded-[16px] border-2 shadow-lg  shadow-[#ff8fcd4e] border-[#95326838]">
+                      <div className="bg-[#95326838] flex flex-col justify-center items-center gap-3   min-h-[220px] rounded-[20px]">
+                        <ser.icon size={50} />
+                        <p className="text-lg px-4 text-center"> {ser.name}</p>
                       </div>
                     </div>
-                  </Tilt>
-                </div>
+                  </div>
+                </Tilt>
               </div>
-            </>
+            </div>
+
           ))}
         </div>
       </div>

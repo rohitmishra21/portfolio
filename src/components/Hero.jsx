@@ -2,7 +2,7 @@ import React from "react";
 import { Suspense } from "react";
 
 import Border from "./Border";
-import Education from "./Education";
+
 
 const Modal = React.lazy(() => import("@splinetool/react-spline"));
 
@@ -39,7 +39,7 @@ const Hero = () => {
         </div>
         <div className="bg-black w-60 xl:block hidden absolute -right-20 bottom-44 h-16"></div>
       </div>
-      <Education />
+
     </>
   );
 };

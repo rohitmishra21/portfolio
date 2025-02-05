@@ -1,4 +1,4 @@
-import information from "../constants/ProjectInfo";
+
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 

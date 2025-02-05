@@ -17,6 +17,7 @@ const MyProject = () => {
                 src={data.img}
                 className="w-full h-full object-cover"
                 alt=""
+                loading="lazy"
               />
               <a
                 href={data?.liveLink}
